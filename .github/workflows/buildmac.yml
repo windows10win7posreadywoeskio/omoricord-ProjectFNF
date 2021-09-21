@@ -49,12 +49,10 @@ jobs:
           haxelib git openfl https://github.com/openfl/openfl
           haxelib install actuate
           haxelib list
-      - name: Create APIStuff
-        run: echo "package;class APIStuff{public static var API:String = '';public static var EncKey:String = '';}" > source/APIStuff.hx
       - name: Compile
         run: haxelib run lime build mac 
       - name: Publish Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: macBuild
+          name: macOSbuild
           path: export/release/macos/bin
