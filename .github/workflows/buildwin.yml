@@ -52,12 +52,10 @@ jobs:
           haxelib install actuate
           haxelib list
         shell: cmd
-      - name: Create APIStuff
-        run: echo "package;class APIStuff{public static var API:String = '';public static var EncKey:String = '';}" > source/APIStuff.hx
       - name: Compile
         run: haxelib run lime build windows
       - name: Publish Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: windowsBuild
+          name: winBuild
           path: export/release/windows/bin
