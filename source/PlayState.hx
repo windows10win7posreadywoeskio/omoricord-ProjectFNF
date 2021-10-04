@@ -274,6 +274,8 @@ class PlayState extends MusicBeatState
 				storyDifficultyText = "Normal";
 			case 2:
 				storyDifficultyText = "Hard";
+			case 3:
+				storyDifficultyText = "Hard+";
 		}
 
 		iconRPC = SONG.player2;
@@ -2337,6 +2339,9 @@ class PlayState extends MusicBeatState
 
 					if (storyDifficulty == 2)
 						difficulty = '-hard';
+
+					if (storyDifficulty == 3)
+						difficulty = '-hardplus';
 
 					trace('[ProjectFNF] Loading song ' + SONG.song.toLowerCase());
 					trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);

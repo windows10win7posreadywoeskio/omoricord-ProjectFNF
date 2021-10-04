@@ -23,37 +23,22 @@ class StoryMenuState extends MusicBeatState
 	var weekData:Array<Dynamic> = [
 		// Songs that are in the weeks
 		['Tutorial'],
-		['Bopeebo', 'Fresh', 'Dadbattle'],
-		['Spookeez', 'South', "Monster"], // 'Spookeez'
-		['Pico', 'Philly', "Blammed"],
-		['Satin-Panties', "High", "Milf"],
-		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
-		['Senpai', 'Roses', 'Thorns']
+		['Entering']
 	];
-	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard
+	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard, 3 = hard+
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true]; // If the weeks are unlocked
+	public static var weekUnlocked:Array<Bool> = [true, true]; // If the weeks are unlocked
 
 	var weekCharacters:Array<Dynamic> = [
 		// Characters that are displayed in the story mode menu
 		['dad', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
-		['spooky', 'bf', 'gf'],
-		['pico', 'bf', 'gf'],
-		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
+		['dad', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
 		// week names
 		"",
-		"Daddy Dearest",
-		"Spooky Month",
-		"PICO",
-		"MOMMY MUST MURDER",
-		"RED SNOW",
-		"hating simulator ft. moawling"
+		"OMORICORD demo lol"
 	];
 
 	var txtWeekTitle:FlxText;
